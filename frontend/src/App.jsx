@@ -1,9 +1,10 @@
 import { Outlet } from 'react-router-dom';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <>
-      <h1>Private Route</h1>
+      <NavBar />
       <Outlet />
     </>
   );
