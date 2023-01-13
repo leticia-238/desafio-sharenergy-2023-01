@@ -11,14 +11,14 @@ import './index.css';
 import Private from './layouts/Private';
 import Login from './pages/Login';
 import HttpStatusCat from './pages/HttpStatusCat';
-import UserList from './pages/UserList';
+import Users from './pages/Users';
 import CustomerManagement from './layouts/CustomerManagement';
 import AuthProvider from './contexts/AuthContext';
 
 const router = createBrowserRouter(
   createRoutesFromElements([
     <Route path="/" element={ <Private /> }>
-      <Route index element={ <UserList /> } />
+      <Route index element={ <Users /> } />
       <Route path="http-status-cat" element={ <HttpStatusCat /> } />
       <Route path="customers" element={ <CustomerManagement /> }>
         <Route index element={ <h2>Customer List</h2> } />
