@@ -12,10 +12,10 @@ function UserList({ data }) {
             className="rounded-full w-20 h-20 bg-slate-50"
           />
           <div className="grow grid items-center">
-            <h3 className="text-sm">{name.first + name.last}</h3>
+            <h3 className="text-sm">{`${name.first} ${name.last}`}</h3>
             <p className="text-sm">{email}</p>
-            <p className="text-sm">{login.username}</p>
-            <p className="text-sm">{dob.age}</p>
+            <p className="text-sm">{`Username: ${login.username}`}</p>
+            <p className="text-sm">{`Idade: ${dob.age}`}</p>
           </div>
         </li>
       ))}
