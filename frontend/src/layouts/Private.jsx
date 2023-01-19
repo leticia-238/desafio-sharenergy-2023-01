@@ -1,13 +1,14 @@
-import { Outlet, Navigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { Navigate } from 'react-router-dom';
+import App from '../App';
+import { AuthContext } from '../contexts/AuthContext';
 
 function Private() {
-  const auth = { token: true };
+  const auth = useContext(AuthContext);
+
   return (
     auth.token ? (
-      <>
-        <h1>Private Route</h1>
-        <Outlet />
-      </>
+      <App />
     ) : <Navigate to="/login" />
   );
 }
