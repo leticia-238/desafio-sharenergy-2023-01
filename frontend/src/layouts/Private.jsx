@@ -5,7 +5,6 @@ import { AuthContext } from '../contexts/AuthContext';
 
 function Private() {
   const auth = useContext(AuthContext);
-
   return (
     auth.token ? (
       <App />
