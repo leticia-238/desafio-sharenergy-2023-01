@@ -15,16 +15,14 @@ Esta aplicação permite ao usuário:
 - Informar um status HTTP num campo de entrada e visualizar a imagem correspondente recebida pela API [HTTP Cats](https://http.cat/).
 
 <p align="center">
-  <img width="500px" src="./screen-login.png" alt="Tela de login" />
+  <img width="500px" src="./login.gif" alt="Tela de login" />
 </p>
 
 <p align="center">
-  <img width="500px" src="./screen-user-list.png" alt="Tela com a lista de usuários" />
+  <img width="500px" src="./app.gif" alt="Telas do App" />
 </p>
 
-<p align="center">
-  <img width="500px" src="./screen-http-cats.png" alt="Tela com o status HTTP Cats" />
-</p>
+> [Clique aqui para acessar o vídeo do projeto](https://drive.google.com/file/d/1XULRBinkHj_gu2BpxXv-Jy1vEwT2G0CW/view?usp=sharing)
 
 ## Tecnologias e Ferramentas utilizadas
 
