@@ -6,8 +6,8 @@ function NavLink({ path, children }) {
   return (
     <Link
       to={ path }
-      className="rounded-lg px-3 py-2 text-slate-700 font-medium
-      hover:bg-slate-100 hover:text-slate-900"
+      className="rounded-lg px-3 py-2 text-cyan-900 font-medium
+      hover:bg-cyan-600 hover:text-white"
     >
       { children }
     </Link>
