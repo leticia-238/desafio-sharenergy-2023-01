@@ -52,7 +52,7 @@ function Users() {
   if (isLoading) return ('IS LOADING...');
 
   return (
-    <div>
+    <div className="m-4">
       <SearchField search={ search } setSearch={ setSearch } />
       <UserList data={ filteredData.slice(firstItemIndex, lastItemIndex) } />
       { totalPageCount > 1 && (
