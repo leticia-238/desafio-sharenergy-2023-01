@@ -14,12 +14,14 @@ import HttpStatusCat from './pages/HttpStatusCat';
 import Users from './pages/Users';
 import CustomerManagement from './layouts/CustomerManagement';
 import AuthProvider from './contexts/AuthContext';
+import RandomDog from './pages/RandomDog';
 
 const router = createBrowserRouter(
   createRoutesFromElements([
     <Route path="/" element={ <Private /> }>
       <Route index element={ <Users /> } />
       <Route path="http-status-cat" element={ <HttpStatusCat /> } />
+      <Route path="random-dog" element={ <RandomDog /> } />
       <Route path="customers" element={ <CustomerManagement /> }>
         <Route index element={ <h2>Customer List</h2> } />
         <Route path="edit" element={ <h2>Customer Edit</h2> } />
