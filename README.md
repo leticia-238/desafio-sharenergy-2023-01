@@ -1,5 +1,5 @@
 <h1 align="center">
-  Aplicação Web 
+  Aplicação Web FullStack
 </h1>
 
 &emsp;
@@ -58,11 +58,11 @@ Esta aplicação permite ao usuário:
 1. Clone o projeto:
 
     ```bash
-    git clone git@github.com:leticia-238/app-fullstack.git`
+    git clone git@github.com:leticia-238/desafio-sharenergy-2023-01.git`
     ```
 2. Entre na pasta do repositório clonado:
     ```bash
-    cd app-fullstack
+    cd desafio-sharenergy-2023-01
     ```
     
 #### Iniciando a aplicação Frontend:
