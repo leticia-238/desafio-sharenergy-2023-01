@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const AuthContext = createContext();
 
 function AuthProvider({ children }) {
-  const savedToken = JSON.parse(localStorage.getItem('token')) || null;
+  const savedToken = localStorage.getItem('token') || null;
   const [token, setToken] = useState(savedToken);
 
   const value = useMemo(() => ({ token, setToken }), [token]);
