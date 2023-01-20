@@ -9,7 +9,7 @@ function HttpStatusCat() {
   const [imageUrl, setImageUrl] = useState('');
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 m-4">
       <h1 className="font-semibold text-xl">
         {`Status Code: ${firstDigit}  ${secondDigit}  ${thirdDigit}`}
       </h1>
