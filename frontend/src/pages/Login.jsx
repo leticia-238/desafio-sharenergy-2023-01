@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../contexts/AuthContext';
 import authApi from '../services/authApi';
 
 function Login() {
@@ -11,17 +10,15 @@ function Login() {
   const [invalidLogin, setInvalidLogin] = useState(false);
 
   const navigate = useNavigate();
-  const { setToken } = useContext(AuthContext);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const token = await authApi({ user: { username, password } });
-      setToken(token);
+      const token = await authApi({ username, password });
       if (rememberCheck) {
-        const parsedData = JSON.stringify({ username, password });
-        localStorage.setItem(parsedData);
+        localStorage.setItem('user', JSON.stringify({ username, password }));
       }
+      localStorage.setItem('token', token);
       navigate('/');
     } catch (error) {
       setInvalidLogin(true);
@@ -41,12 +38,16 @@ function Login() {
     <div className="min-h-screen bg-gradient-to-r from-cyan-400 to-green-400 p-4">
       <form
         className="grid gap-4 bg-white p-2 rounded-md mt-44"
-        onSubmit={ async (e) => { await handleSubmit(e); } }
+        onSubmit={ handleSubmit }
       >
         {invalidLogin && (
-          <p>Username ou senha incorretos. Tente novamente!</p>
+          <p className="text-center text-red-700">
+            Username ou senha incorretos.
+            <br />
+            Tente novamente!
+          </p>
         )}
-        <legend className="font-bold text-center text-2xl text-cyan-600">Login</legend>
+        <h2 className="font-bold text-center text-2xl text-cyan-600">Login</h2>
         <label
           className="rounded-lg bg-gray-100 border-2
         border-gray-200 flex items-center"
