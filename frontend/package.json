@@ -11,7 +11,8 @@
   "eslintConfig": {
     "extends": [
       "trybe-frontend"
-    ]
+    ],
+    "ignorePatterns":["/dist"]
   },
   "dependencies": {
     "react": "^18.2.0",
