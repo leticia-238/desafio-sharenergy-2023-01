@@ -22,8 +22,6 @@ Esta aplicação permite ao usuário:
   <img width="500px" src="./app.gif" alt="Telas do App" />
 </p>
 
-> [Clique aqui para acessar o vídeo do projeto](https://drive.google.com/file/d/1XULRBinkHj_gu2BpxXv-Jy1vEwT2G0CW/view?usp=sharing)
-
 ## Tecnologias e Ferramentas utilizadas
 
 ### Frontend 
